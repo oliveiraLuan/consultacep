@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DSViaCep</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;700&family=Poppins:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header class="nav-container">
+        <nav class="nav-main">
+            <h1>DSViaCEP</h1>
+            <div class="contact-link">contato</div>
+        </nav>
+    </header>
+    <main>
+        <section id="form-section" class="form-container">
+            <div class="card-form">
+                <form name="newAddress">
+                    <div class="form-control">
+                        <label for="cep">CEP</label>
+                        <input class="form-input" type="text" name="cep" id="cep" placeholder="CEP">
+                        <div class="error-message" data-error="cep"></div>
+                    </div>
+                    <div class="form-control">
+                        <label for="street">Logradouro</label>
+                        <input class="form-input" type="text" name="street" id="street" placeholder="Logradouro" disabled>
+                    </div>
+                    <div class="form-control">
+                        <label for="number">Número</label>
+                        <input class="form-input" type="text" name="number" id="number" placeholder="Número">
+                        <div class="error-message" data-error="number"></div>
+                    </div>
+                    <div class="form-control">
+                        <label for="city">Cidade</label>
+                        <input class="form-input" type="city" name="city" id="city" placeholder="Cidade" disabled>
+                    </div>
+                    <div class="btn-container">
+                        <button name="btnSave" class="button btn-left" type="submit">Salvar</button>
+                        <button name="btnClear" class="button btn-right">Limpar</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <section id="list-address" class="list-address">
+            <div class="list-item">
+                <h3>São Paulo</h3>
+                <p class="list-item-street">Rua Aspicuelta, 422</p>
+                <p class="list-item-cep">05416-011</p>
+            </div>
+        </section>
+        <section id="modal-contact" class="modal-container">
+            <div class="modal-box">
+                <p>Texto aqui</p>
+                <button id="btn-contact" class="button">Fechar</button>
+            </div>
+        </section>
+    </main>
+    <script type="module" src="js/dsviacep.js"></script>
+</body>
+
+</html>
